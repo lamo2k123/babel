@@ -24,7 +24,9 @@
   ],
   "scripts": {
     "bench": "make bench",
-    "test": "make test"
+    "test": "make test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "acorn-jsx": "^1.0.0",
@@ -57,7 +59,7 @@
     "is-integer": "^1.0.4",
     "js-tokens": "1.0.1",
     "line-numbers": "0.2.0",
-    "lodash": "^3.6.0",
+    "lodash": "^4.17.5",
     "minimatch": "^2.0.3",
     "output-file-sync": "^1.1.0",
     "path-exists": "^1.0.0",
@@ -73,7 +75,8 @@
     "source-map-support": "^0.2.10",
     "strip-json-comments": "^1.0.2",
     "to-fast-properties": "^1.0.0",
-    "trim-right": "^1.0.0"
+    "trim-right": "^1.0.0",
+    "snyk": "^1.88.1"
   },
   "devDependencies": {
     "babel": "5.6.10",
@@ -87,5 +90,6 @@
     "mocha": "2.2.0",
     "rimraf": "^2.3.2",
     "uglify-js": "^2.4.16"
-  }
+  },
+  "snyk": true
 }
